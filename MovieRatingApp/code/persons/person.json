@@ -1,0 +1,76 @@
+[
+
+{
+"Id":1000,
+"Name":"Seth Rogan",
+"Bio":"Canadian actor, comedian, writer and producer who having begun as a stand-up comedian, acted in many comedy movies.",
+"Movies":["Pinapple Express", "Knocked up"],
+"Collaborators":["Judd Apatow", "James Franco", "Gary Cole", "David Gordon Green", "Katherine Heigl", "Paul Rudd"]
+},
+
+{
+"Id":1001,
+"Name":"James Franco",
+"Bio":"Academy Award nominated actor, best known for for his role as Harry Osborn in the Spider-Man trilogy.",
+"Movies":["Pinapple Express"],
+"Collaborators":["Judd Apatow", "Seth Rogan", "Gary Cole", "David Gordon Green"]
+},
+
+{
+"Id":1002,
+"Name":"Judd Apatow",
+"Bio":"An American film director, producer, screenwriter, and comedian. He is the founder of Apatow Productions.",
+"Movies":["Pinapple Express", "Knocked up", "This is 40"],
+"Collaborators":["James Franco", "Seth Rogan", "Gary Cole", "David Gordon Green", "Katherine Heigl", "Paul Rudd", "John Lithgow", "Leslie Mann"]
+},
+
+{
+"Id":1003,
+"Name":"Paul Rudd",
+"Bio":"An American actor, screenwriter, and producer, who studied theater at the University of Kansas and the American Academy of Dramatic Arts before making his acting debut in 1992 with the NBC drama series Sisters.",
+"Movies":["Knocked up", "This is 40"],
+"Collaborators":["Seth Rogan", "Katherine Heigl", "John Lithgow", "Leslie Mann"]
+},
+
+{
+"Id":1004,
+"Name":"Katherine Heigl",
+"Bio":"An American actress and former fashion model. She started her career as a child model with Wilhelmina Models before turning her attention to acting.",
+"Movies":["Knocked up"],
+"Collaborators":["Seth Rogan", "Paul Rudd", "Leslie Mann", "Judd Apatow"]
+},
+
+{
+"Id":1005,
+"Name":"Leslie Mann",
+"Bio":"An American actress. She has appeared in numerous films, including The Cable Guy (1996), George of the Jungle (1997), Knocked Up (2007), 17 Again (2009), Funny People (2009), and Blockers (2018).",
+"Movies":["Knocked up", "This is 40"],
+"Collaborators":["Seth Rogan", "Katherine Heigl", "Paul Rudd", "John Lithgow", "Judd Apatow"]
+},
+
+{
+"Id":1006,
+"Name":"Gary Cole",
+"Bio":"An American actor and voice actor.",
+"Movies":["Pinapple Express"],
+"Collaborators":["James Franco", "Seth Rogan", "David Gordon Green", "Judd Apatow"]
+},
+
+{
+"Id":1007,
+"Name":"David Gordon Green",
+"Bio":"An American filmmaker. He directed the dramas George Washington (2000), All the Real Girls (2003), and Snow Angels (2007), all of which he wrote or co-wrote.",
+"Movies":["Pinapple Express"],
+"Collaborators":["James Franco", "Seth Rogan", "Gary Cole", "Judd Apatow"]
+},
+
+{
+"Id":1008,
+"Name":"John Lithgow",
+"Bio":"An American actor, musician, poet, author, and singer. Lithgow is best known for his work in theater, television, and film.",
+"Movies":["This is 40"],
+"Collaborators":["Paul Rudd", "Judd Apatow", "Leslie Mann"]
+}
+
+
+]

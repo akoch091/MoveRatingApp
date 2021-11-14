@@ -1,0 +1,91 @@
+doctype html
+html
+  head
+    style.
+      * {
+      box-sizing: border-box;
+      }
+      /* Style the header */
+      .header {
+      background-color: yellow;
+      text-align: center;
+      padding: 15px;
+      }
+      /* Style the top navigation bar */
+      .pannel {
+      overflow: hidden;
+      background-color: grey;
+      }
+      /* Style the pannel links */
+      .pannel {
+      float: middle;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: underline;
+      }
+      /* Create three columns */
+      .column {
+      float: left;
+      padding: 10px;
+      }
+      /* Middle column */
+      .column.middle {
+      width: 50%;
+      }
+      /* Right and left column */
+      .column.side {
+      width: 25%;
+      }
+  body(onload="init()")
+    .header
+      h1(id='title') #{title}
+      ul
+        a(href="/editmovie/" + Id) Edit Movie
+        br
+        a(href="/userprofile") Home
+        br
+      button(type='button' id='reviewButton') Leave a Review
+    .pannel
+      h2 All you need to know about this movie!
+    .row
+      .column.side
+        h2 Reviews:
+        ul
+          each review in reviews
+            a(href="/OtherUser/" + review.User) #{review.User}
+            ul
+              li #{review.Score}
+              li #{review.ShoRev}
+              li #{review.LenRev}
+      .column.middle
+        h2 Movie information:
+        p#p01
+          | Plot: #{plot}
+        p#p02 Release date: #{releaseDate}
+        p#p03 Runtime: #{runtime}
+        p#p04 Average rating: #{averagerating}
+        p#p04 Genre: #{genre}
+        p#p05
+          | Stars: 
+          each star in Stars
+            a(href="/persons/" + star.Id) #{star.Name}
+            br
+        p#p05
+          | Writers: 
+          each writer in Writers
+            a(href="/persons/" + writer.Id) #{writer.Name}
+            br
+        p#p05
+          | Directors: 
+          each director in Directors
+            a(href="/persons/" + director.Id) #{director.Name}
+            br
+      .column.side
+        h2 Related Movies:
+        each movie in RelatedMovies
+          a(href="/films/" + movie.Id) #{movie.Title}
+          br
+    script
+      include moviePage.js

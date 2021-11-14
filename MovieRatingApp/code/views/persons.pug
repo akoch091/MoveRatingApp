@@ -1,0 +1,11 @@
+html
+	head
+		h1 Welcome to our Artist Page!
+		a(href="/userprofile") Home
+		h2 See all the Artists we currently have in our DB
+		
+	Body
+		div#main
+			each person in people
+				a(href="/persons/" + person.Id) #{person.Name}
+				br

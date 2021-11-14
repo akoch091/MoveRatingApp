@@ -1,0 +1,70 @@
+doctype html
+html
+  head
+    style.
+      #p01{
+      color: red;
+      font-size: 150%;
+      font-style: italic
+      }
+      * {
+      box-sizing: border-box;
+      }
+      /* Style the header */
+      .header {
+      background-color: yellow;
+      text-align: center;
+      padding: 15px;
+      }
+      /* Style the top navigation bar */
+      .unfollow {
+      overflow: hidden;
+      background-color: red;
+      }
+      /* Style the unfollow links */
+      .unfollow {
+      float: middle;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: underline;
+      }
+      /* Create three columns */
+      .column {
+      float: left;
+      padding: 10px;
+      }
+      /* Middle column */
+      .column.middle {
+      width: 50%;
+      }
+      /* Right and left column */
+      .column.side {
+      width: 50%;
+      }
+  body(onload="init()")
+    .header
+      h1#h10 #{name}
+    .unfollow
+      p#p20
+        | #{bio}
+      button(type='button' id='unfollow') Unfollow this person
+      button(type='button' id='follow') Follow this person
+      br
+      a(href="/userprofile") Home
+    .row
+      .column.side
+        h2 Top collaborators:
+        ul#ul02
+          each person in colabList
+            a(href="/persons/" + person.Id) #{person.Name}
+            br
+      .column.side
+        h2 Movies:
+        ul
+          each movie in moviesList
+            a(href="/films/" + movie.Id) #{movie.Title}
+            br
+    script
+      include personpage.js

@@ -1,0 +1,16 @@
+html
+  head
+  body(onload="init()")
+    div
+      h1 Add a Person to our DB
+      div
+        label Name of the Artist: 
+        input(type='text' id='name')
+      div
+        label Bio of Artist:
+        input(type='text' id='bio')
+      button(type='button' id='add') Add Person
+      br
+      a(href="/userprofile") Home
+    script
+      include addPersonScript.js	

@@ -1,0 +1,21 @@
+[
+
+{"Id":4000, "User":"usr1", "Movie":"Pinapple Express", "Score":7, "ShoRev":"Great!", "LenRev":"Funny and action filled!"},
+
+{"Id":4001, "User":"usr2", "Movie":"Pinapple Express", "Score":8, "ShoRev":"Loved it!", "LenRev":"Very good acting."},
+
+{"Id":4002, "User":"usr3", "Movie":"Pinapple Express", "Score":9, "ShoRev":"Awesome!", "LenRev":"Never laughed so hard before!!!"},
+
+{"Id":4003, "User":"usr1", "Movie":"Knocked up", "Score":6, "ShoRev":"Meh", "LenRev":"Mediocre, at best"},
+
+{"Id":4004, "User":"usr2", "Movie":"Knocked up", "Score":8, "ShoRev":"Loved it!", "LenRev":"Funny movie"},
+
+{"Id":4005, "User":"usr3", "Movie":"Knocked up", "Score":7, "ShoRev":"Not bad.", "LenRev":"A good way to spend the afternoon with friends."},
+
+{"Id":4006, "User":"usr1", "Movie":"This is 40", "Score":7, "ShoRev":"Very funny!", "LenRev":"Paul Rudd did an amazing jod in this one!"},
+
+{"Id":4007, "User":"usr2", "Movie":"This is 40", "Score":8, "ShoRev":"Loved it!", "LenRev":"Sweet and heart warming!"}
+
+
+
+]

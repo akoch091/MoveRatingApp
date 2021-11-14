@@ -1,0 +1,46 @@
+[
+
+{
+"Id":3000,
+"Title":"Pinapple Express",
+"ReleaseDate":"2008",
+"Genre":"action",
+"Stars":["Seth Rogan", "James Franco", "Gary Cole"],
+"Writer":["Judd Apatow"],
+"Director":["David Gordon Green"],
+"Runtime":"112 minutes",
+"Plot":"Process server and his marijuana dealer are forced to flee from hitmen and a corrupt police officer after witnessing them commit a murder.",
+"AverageRating":8,
+"Reviews":[{"Id":4000, "User":"usr1", "Movie":"Pinapple Express", "Score":7, "ShoRev":"Great!", "LenRev":"Funny and action filled!"}, {"Id":4001, "User":"usr2", "Movie":"Pinapple Express", "Score":8, "ShoRev":"Loved it!", "LenRev":"Very good acting."}, {"Id":4002, "User":"usr3", "Movie":"Pinapple Express", "Score":9, "ShoRev":"Awesome!", "LenRev":"Never laughed so hard before!!!"}]
+},
+
+{
+"Id":3001,
+"Title":"Knocked up",
+"ReleaseDate":"2007",
+"Genre":"comedy",
+"Stars":["Seth Rogan", "Katherine Heigl", "Paul Rudd", "Leslie Mann"],
+"Writer":["Judd Apatow"],
+"Director":["Judd Apatow"],
+"Runtime":"129 minutes",
+"Plot":"Missadventures of a couple who end up in a peculiar situation due to poor choices",
+"AverageRating":7,
+"Reviews":[{"Id":4003, "User":"usr1", "Movie":"Knocked up", "Score":6, "ShoRev":"Meh", "LenRev":"Mediocre, at best"}, {"Id":4004, "User":"usr2", "Movie":"Knocked up", "Score":8, "ShoRev":"Loved it!", "LenRev":"Funny movie"}, {"Id":4005, "User":"usr3", "Movie":"Knocked up", "Score":7, "ShoRev":"Not bad.", "LenRev":"A good way to spend the afternoon with friends."}]
+},
+
+{
+"Id":3002,
+"Title":"This is 40",
+"ReleaseDate":"2012",
+"Genre":"comedy",
+"Stars":["Paul Rudd", "Leslie Mann", "John Lithgow"],
+"Writer":["Judd Apatow"],
+"Director":["Judd Apatow"],
+"Runtime":"133 minutes",
+"Plot":"Centered around married couple Pete (Rudd) and Debbie (Mann), characters introduced in the previous film, whose stressful relationship is compounded by each turning 40.",
+"AverageRating":7.5,
+"Reviews":[{"Id":4006, "User":"usr1", "Movie":"This is 40", "Score":7, "ShoRev":"Very funny!", "LenRev":"Paul Rudd did an amazing jod in this one!"}, {"Id":4007, "User":"usr2", "Movie":"This is 40", "Score":8, "ShoRev":"Loved it!", "LenRev":"Sweet and heart warming!"}]
+}
+
+
+]

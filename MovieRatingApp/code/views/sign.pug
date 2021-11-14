@@ -1,0 +1,68 @@
+doctype html
+html
+  head
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    style.
+      body {
+      font-family: Arial;
+      color: white;
+      }
+      .split {
+      height: 100%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+      }
+      .right {
+      right: 0;
+      background-color: grey;
+      }
+      .left {
+      left: 0;
+      background-color: black;
+      }
+      .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      }
+      .centered img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      }
+  body(onload="init()")
+    .split.left
+      .centered
+        h1 Welcome to MovieFans
+        img(src='seven.jpg' alt='Not available')
+        img(src='gf.jpg' alt='Not available')
+        img(src='p.jpg' alt='Not available')
+        img(src='bh.jpg' alt='Not available')
+        img(src='insomnia.jpg' alt='Not available')
+        h2 Check out and review our movies!
+        p You will first have to login or create an account.
+    .split.right
+      .centered
+        img(src='logo.png' alt='Not available')
+        h2 Welcome to our site portal.
+        div
+          label Username:
+          input(type='text' id='uname')
+        div
+          label Password:
+          input(type='text' id='pword')
+        div
+          h2
+        div
+          button(type='button' id='si') Sign in
+          button(type='button' id='su') Sign up
+          br
+          label(id='lbl')
+    script
+      include signin.js		  

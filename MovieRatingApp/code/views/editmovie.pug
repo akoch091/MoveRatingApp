@@ -1,0 +1,35 @@
+html
+  head
+  body(onload="init()")
+    div
+      h1 Edit this movie by adding a writer, an actor and/or a director:
+      div
+      br
+      br
+      label(for='actor') Choose an actor to add to the movie:
+      select(name='actors' id='actors')
+        each person in people
+            option(value=person) #{person}
+      br
+      br
+      div
+        label(for='director') Choose a director to add to the movie:
+        select(name='director' id='directors')
+            each person in people
+                option(value=person) #{person}
+      br
+      br
+      div
+        label(for='writer') Choose a writer to add to the movie:
+        select(name='writers' id='writers')
+            each person in people
+                option(value=person) #{person}
+      br
+      br
+    button(type='button' id='submit') Submit
+    br
+    a(href="/userprofile") Home
+    br
+    script
+      include editmovie.js
+

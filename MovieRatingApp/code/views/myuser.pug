@@ -1,0 +1,88 @@
+doctype html
+html
+  head
+    style.
+      #p01{
+      color: red;
+      font-size: 150%;
+      font-style: italic
+      }
+      * {
+      box-sizing: border-box;
+      }
+      /* Style the header */
+      .header {
+      background-color: yellow;
+      text-align: center;
+      padding: 15px;
+      }
+      /* Style the top navigation bar */
+      .search {
+      overflow: hidden;
+      background-color: blue;
+      }
+      /* Style the search links */
+      .search {
+      float: middle;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: underline;
+      }
+      /* Create three columns */
+      .column {
+      float: left;
+      padding: 10px;
+      }
+      /* Middle column */
+      .column.middle {
+      width: 25%;
+      }
+      /* Right and left column */
+      .column.side {
+      width: 25%;
+      }
+  body(onload="init()")
+    .header
+      h1 Signed in as: #{username}
+      h1 Type: #{type}
+      button(type='button' id='people') Browse People
+      button(type='button' id='movies') Browse Movies
+      button(type='button' id='userType') Change User Type
+      button(type='button' id='addMovie') Add a Movie
+      button(type='button' id='addPerson') Add a Person
+      button(type='button' id='logout') Logout
+    .search
+      button(type='button' id='search') Search
+      input(type='text' id='searchparam')
+    .row
+      .column.side
+        h2 Other users you follow:
+        ul#ul01
+          each user in usersFollow
+            a(href="/OtherUser/" + user) #{user}
+            br
+      .column.middle
+        h2 People you follow:
+        ul#ul02
+          each person in peopleList
+            a(href="/persons/" + person.Id) #{person.Name}
+            br
+      .column.middle
+        h2 Your reviews:
+        each review in reviews
+          ul
+            li Movie: #{review.Movie}
+            li Score: #{review.Score}
+            li Short Review: #{review.ShoRev}
+            li Long Review: #{review.LenRev}
+      .column.side
+        h2 Recommendations:
+        ul#ul03
+            each movie in recommendedMoviesList
+              a(href="/films/" + movie.Id) #{movie.Title}
+              br
+    script
+      include usr.js		 
+            

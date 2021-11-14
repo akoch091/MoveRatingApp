@@ -1,0 +1,11 @@
+html
+	head
+		h1 Welcome to our Movie Page!
+		a(href="/userprofile") Home
+		h2 See all the Movies we currently have in our DB
+		
+	Body
+		div#main
+			each movie in movies
+				a(href="/films/" + movie.Id) #{movie.Title}
+				br

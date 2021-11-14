@@ -1,0 +1,35 @@
+html
+  head
+  body(onload="init()")
+    div
+      h1 Add a Movie to our DB
+      p1 Please add one actor/writer/actor per field. You will be able to edit this movie by adding extra people later.
+      div
+        label Title of the movie: 
+        input(type='text' id='title')
+      div
+        label Movie Release Date:
+        input(type='text' id='date')
+      div
+        label Genre of the Movie:
+        input(type='text' id='genre')
+      div
+        label Star of the Movie:
+        input(type='text' id='stars')
+      div
+        label Writer of the Movie:
+        input(type='text' id='writer')
+      div
+        label Director of the Movie:
+        input(type='text' id='director')
+      div
+        label Runtime of the Movie:
+        input(type='text' id='runtime')
+      div
+        label Plot of the Movie:
+        input(type='text' id='plot')
+      button(type='button' id='add') Add movie
+      br
+      a(href="/userprofile") Home
+    script
+      include addMovieScript.js	
